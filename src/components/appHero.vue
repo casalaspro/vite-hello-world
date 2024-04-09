@@ -3,7 +3,8 @@
 export default {
   data(){
     return{
-      imageName : "landscape.jpg"
+      imageName : "landscape.jpg",
+      heroText : "VITE!",
     }
   },
   methods: {
@@ -24,7 +25,7 @@ export default {
 <template>
   <section class="hero" :style="{ backgroundImage: 'url(' + getImagePath(imageName) + ')' }">
     <!-- <img :src="getImagePath(imageName)"> -->
-    <h2>VITE!</h2>
+    <h2>{{ heroText }}</h2>
 
   </section>
 
@@ -42,7 +43,8 @@ export default {
 
  h2{
   font-size: 200px;
-  color: rgba(255, 255, 255, 0.851);
+  color: #ffffff;
+  text-shadow: -1px 4px 16px rgba(0,0,0,0.2);
  }
 
 
